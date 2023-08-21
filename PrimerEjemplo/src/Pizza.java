@@ -28,6 +28,47 @@ public class Pizza {
     
     
     // getter and setter (accesadores y mutadores)
+    public void setNombre(String nombre)
+    {
+        this.nombre = nombre;
+    }
+    public String getNombre()
+    {
+        return this.nombre;
+    }
+    
+    public String getTamano() {
+        return tamano;
+    }
+
+    public void setTamano(String tamano) {
+        this.tamano = tamano;
+    }
+
+    public String getMasa() {
+        return masa;
+    }
+
+    public void setMasa(String masa) {
+        this.masa = masa;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
     
     // métodos customer (personalizado)
+    public void calentar()
+    {
+        System.out.println("La Pizza se está calentando...");
+    }
+    public void preparar()
+    {
+        System.out.println("La Pizza se está preparando...");
+    }
+    
 }
