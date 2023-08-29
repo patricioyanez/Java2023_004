@@ -19,10 +19,10 @@ public class Principal {
         
         System.out.println("**** Streaming ****");
         System.out.println(spotify.imprimir());
-        cancion1.setNombre("Quién fuera");
+
         System.out.println("\nCanción Actual:");
         System.out.println(spotify.getCancion().getNombre() );
-        
+        System.out.println(spotify.getSegundosReproducidos());
         
     }
 }
