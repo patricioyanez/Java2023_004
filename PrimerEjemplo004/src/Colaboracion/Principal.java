@@ -24,5 +24,21 @@ public class Principal {
         System.out.println(spotify.getCancion().getNombre() );
         System.out.println(spotify.getSegundosReproducidos());
         
+        // mostrar artista en reproducción
+        System.out.println("\nArtista:");
+        System.out.println(spotify.getCancion().getArtista() );
+        
+        
+        // Crear un metodo que permita saber cuantos segundos
+        // de la canción falta por reproducir.
+        // Mostrar al usuario este valor
+        System.out.print("\nSegundos faltantes de reproduccción: ");
+        System.out.print(spotify.segundosFaltantes());
+        
+        // Crear otra canción. 
+        // solicitar los datos al usuario.
+        // "transmitirla" vía spotify.
+        
+        
     }
 }

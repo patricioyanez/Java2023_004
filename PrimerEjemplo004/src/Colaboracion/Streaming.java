@@ -36,6 +36,9 @@ public class Streaming {
                 "\nSegundos Reproducidos=" + segundosReproducidos;
     }
     
-    
+    public int segundosFaltantes()
+    {
+        return this.cancion.getDuracion() - segundosReproducidos;
+    }
     
 }
