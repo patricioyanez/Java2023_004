@@ -1,5 +1,7 @@
 package Colaboracion;
 
+import java.util.Scanner;
+
 public class Principal {
     public static void main(String[] args) {
         
@@ -39,6 +41,27 @@ public class Principal {
         // solicitar los datos al usuario.
         // "transmitirla" vía spotify.
         
+        Scanner leer = new Scanner(System.in);
+        Cancion cancion2 = new Cancion();
+        System.out.println("\n\n**** Ingreso de nueva canción *****");
+        System.out.print("Ingrese nombre    : ");
+        cancion2.setNombre(leer.next());
+        System.out.print("Ingrese album     : ");
+        cancion2.setAlbum(leer.next());
+        System.out.print("Ingrese artista   : ");
+        cancion2.setArtista(leer.next());
+        System.out.print("Ingrese Genero    : ");
+        cancion2.setGenero(leer.next());
+        System.out.print("Ingrese Duración  : ");
+        cancion2.setDuracion(leer.nextInt());
+        
+        spotify.setCancion(cancion2);
+        spotify.setSegundosReproducidos(30);
+        
+        System.out.println("**** Streaming ****");
+        System.out.println(spotify.imprimir());
+        System.out.print("\nSegundos faltantes de reproduccción: ");
+        System.out.print(spotify.segundosFaltantes());
         
     }
 }
