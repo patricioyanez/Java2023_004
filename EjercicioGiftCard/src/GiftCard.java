@@ -92,4 +92,16 @@ public class GiftCard {
         return auxClave == clave;
     }
     
+    public boolean validarCompra(int montoCompra)
+    {
+        if(this.monto >= montoCompra)
+            return true;
+        return false;
+    }
+    
+    public int descontarCompra(int montoCompra)
+    {
+        this.monto -= montoCompra;
+        return this.monto;
+    }
 }
