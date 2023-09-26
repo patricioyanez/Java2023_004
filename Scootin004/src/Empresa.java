@@ -39,4 +39,15 @@ public class Empresa {
         }
         return false;
     }
+    
+    // crear un metodo que permita devolver a un empleado
+    // según el rut recibido
+    public Empleado buscarEmpleadoPorRut(String rut)
+    {
+        for (Empleado empleado : empleados) {
+            if(empleado.getRut().equals(rut))
+                return empleado;
+        }
+        return null;
+    }
 }

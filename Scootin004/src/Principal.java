@@ -24,6 +24,19 @@ public class Principal {
         System.out.println("**** Listado de empleados ****");
         scootin.listarEmpleado();
         
+        if(scootin.eliminarEmpleado("1-9"))
+            System.out.println("Empleado eliminado");
+        else
+            System.out.println("Empleado no eliminado");
         
+        System.out.println("**** Listado de empleados ****");
+        scootin.listarEmpleado();
+        
+        System.out.println("Buscar a empleado rut: 2-7");
+        Empleado aux = scootin.buscarEmpleadoPorRut("2-7");
+        if(aux != null)
+            System.out.println(aux.imprimir());
+        else
+            System.out.println("Empleado no encontrado");
     }
 }
