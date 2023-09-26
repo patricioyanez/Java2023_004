@@ -73,7 +73,7 @@ public class Empleado {
     }
 
     public String imprimir() {
-        return "Rut             : " + rut + 
+        return "\nRut             : " + rut + 
                "\nNombre          : " + nombre + 
                "\nGenero          : " + genero + 
                "\nAños de Servicio: " + anioServicio + 

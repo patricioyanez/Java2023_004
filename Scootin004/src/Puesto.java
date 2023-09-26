@@ -30,8 +30,8 @@ public class Puesto {
     }
 
     public String imprimir() {
-        return "Código  : " + codigo + 
-               "Nombre  : " + nombre;
+        return "Código          : " + codigo + 
+               "\nNombre          : " + nombre;
     }
     
     
