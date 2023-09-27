@@ -39,7 +39,7 @@ public class Empresa {
         }
         return false;
     }
-    
+    // Ejercicio 1:
     // crear un metodo que permita devolver a un empleado
     // según el rut recibido
     public Empleado buscarEmpleadoPorRut(String rut)
@@ -50,4 +50,8 @@ public class Empresa {
         }
         return null;
     }
+    
+    // Ejercicio 2:
+    // listar los empleados filtrando por puesto
+    
 }
