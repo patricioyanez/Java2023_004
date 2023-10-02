@@ -38,6 +38,10 @@ public class PrincipalMenu {
             {
                 System.out.println("*** Eliminar por rut ***");
             }
+            else if(opcion.equals("5"))
+            {
+                System.out.println("*** Adios!!! ***");
+            }
             else
             {
                 System.out.println("Opción no válida");
