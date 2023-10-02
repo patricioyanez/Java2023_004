@@ -23,7 +23,20 @@ public class PrincipalMenu {
             
             if(opcion.equals("1"))
             {
-                System.out.println("pass");
+                System.out.println("*** Ingresar empleado ***");
+            }
+            else if(opcion.equals("2"))
+            {
+                System.out.println("*** Listar empleados ***");
+                empresa.listarEmpleado();
+            }
+            else if(opcion.equals("3"))
+            {
+                System.out.println("*** Listar Ejecutivos ***");
+            }
+            else if(opcion.equals("4"))
+            {
+                System.out.println("*** Eliminar por rut ***");
             }
             else
             {
