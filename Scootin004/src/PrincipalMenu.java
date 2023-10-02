@@ -21,11 +21,13 @@ public class PrincipalMenu {
             System.out.println("5.- Salir");
             opcion = leer.next();
             
-            if(!"12345".contains(opcion))
-                System.out.println("Opción no válida");
-            else if(opcion.equals("1"))
+            if(opcion.equals("1"))
             {
                 System.out.println("pass");
+            }
+            else
+            {
+                System.out.println("Opción no válida");
             }
         }
     }
