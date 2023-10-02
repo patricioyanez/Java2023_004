@@ -21,11 +21,11 @@ public class PrincipalMenu {
             System.out.println("5.- Salir");
             opcion = leer.next();
             
-            if(opcion.indexOf("12345")<0)
+            if(!"12345".contains(opcion))
                 System.out.println("Opción no válida");
             else if(opcion.equals("1"))
             {
-                
+                System.out.println("pass");
             }
         }
     }
