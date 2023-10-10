@@ -77,5 +77,9 @@ public class Comida {
         return "Comida{" + "codigo=" + codigo + ", nombre=" + nombre + ", precio=" + precio + ", calorias=" + calorias + ", grasa=" + grasa + ", sodio=" + sodio + '}';
     }
     
+    public String tipoComida()
+    {
+        return "Comida en General";
+    }
     
 }
