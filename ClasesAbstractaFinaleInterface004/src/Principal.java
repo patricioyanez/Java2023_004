@@ -17,5 +17,8 @@ public class Principal {
         double totalPago = 1000 * IOperaciones.IVA;
         System.out.println("Total: " + totalPago);
         
+        // Ejercicio: 2.3.2 y 2.3.3.
+        //
+        
     }
 }
