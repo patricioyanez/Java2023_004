@@ -46,6 +46,11 @@ public class Marca {
         return "Marca{" + "id=" + id + ", nombre=" + nombre + ", habilitado=" + habilitado + '}';
     }
     
-    
+    public void limpiar()
+    {
+        this.id = 0;
+        this.nombre = "";
+        this.habilitado = false;
+    }
     
 }

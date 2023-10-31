@@ -5,12 +5,15 @@
  */
 package Vista;
 
+import Modelo.Marca;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author patri
  */
 public class FrmMarca extends javax.swing.JFrame {
-
+    private Marca marca = new Marca();
     /**
      * Creates new form FrmMarca
      */
@@ -50,12 +53,22 @@ public class FrmMarca extends javax.swing.JFrame {
         chkHabilitado.setText("Habilitado");
 
         btnGrabar.setText("Grabar");
+        btnGrabar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrabarActionPerformed(evt);
+            }
+        });
 
         btnEliminar.setText("Eliminar");
 
         btnListar.setText("Listar");
 
         btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
 
         tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -134,6 +147,34 @@ public class FrmMarca extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        // TODO add your handling code here:
+        txtNombre.setText("");
+        chkHabilitado.setSelected(false);
+        txtNombre.requestFocus();
+        marca.limpiar();
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void btnGrabarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrabarActionPerformed
+        // TODO add your handling code here:
+        // validar
+        if(txtNombre.getText().trim().length() < 1)
+        {
+            JOptionPane.showMessageDialog(this, "Falta el nombre");
+            txtNombre.requestFocus();
+        }
+        else
+        {
+            // enviar a el controlador
+            marca.setNombre(txtNombre.getText().trim().toUpperCase());
+            marca.setHabilitado(chkHabilitado.isSelected());
+            
+            JOptionPane.showMessageDialog(this, "Datos Guardados");
+            btnLimpiar.doClick();
+        }
+        
+    }//GEN-LAST:event_btnGrabarActionPerformed
 
     /**
      * @param args the command line arguments
