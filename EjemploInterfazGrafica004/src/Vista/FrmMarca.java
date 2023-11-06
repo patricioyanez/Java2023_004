@@ -157,16 +157,14 @@ public class FrmMarca extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnGrabarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrabarActionPerformed
-        // TODO add your handling code here:
-        // validar
-        if(txtNombre.getText().trim().length() < 1)
+        // TODO add your handling code here:        
+        if(txtNombre.getText().trim().length() < 1)// validar
         {
             JOptionPane.showMessageDialog(this, "Falta el nombre");
             txtNombre.requestFocus();
         }
         else
-        {
-            // enviar a el controlador
+        {// enviar a el controlador
             marca.setNombre(txtNombre.getText().trim().toUpperCase());
             marca.setHabilitado(chkHabilitado.isSelected());
             
