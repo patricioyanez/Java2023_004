@@ -1,14 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Controlador;
 
-/**
- *
- * @author patri
- */
+package Controlador;
+import Modelo.Marca;
+import java.util.ArrayList;
+
 public class ControladorMarca {
-    
+    public boolean agregar(Marca marca)
+    {
+        
+        return true;
+    }
+    public boolean actualizar(Marca marca)
+    {
+        
+        return true;
+    }
+    public boolean eliminar(int id)
+    {
+        
+        return true;
+    }
+    public Marca buscarPorId(int id)
+    {
+        return null;
+    }
+    public ArrayList<Marca> buscarTodos()
+    {
+        return null;
+    }
 }
