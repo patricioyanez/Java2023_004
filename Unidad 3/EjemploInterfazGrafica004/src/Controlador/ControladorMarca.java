@@ -60,7 +60,7 @@ public class ControladorMarca {
         {
             Conexion con = new Conexion();
             Connection cx = con.obtenerConexion();
-            String sql = "DELETE MARCA WHERE ID=?";
+            String sql = "DELETE FROM MARCA WHERE ID=?";
             PreparedStatement st;
             st = cx.prepareStatement(sql);
             st.setInt(1, id);
