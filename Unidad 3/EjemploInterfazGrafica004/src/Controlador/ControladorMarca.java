@@ -138,6 +138,8 @@ public class ControladorMarca {
     }
     public javax.swing.DefaultComboBoxModel llenarCombo()
     {
+        // EL COMBO MOSTRARÁ LO QUE DEVUELVE EL METODO TOSTRING() DE MARCA
+        //
         Vector listado = new Vector();
         listado.add(new Marca(0, "Seleccionar", true));
         try
